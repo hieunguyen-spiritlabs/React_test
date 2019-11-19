@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 
 import Header from "./Header.component";
 
-const WithHeader = WrappedComponent => (
+const WithHeader = (WrappedComponent, HeaderChosen = Header ) => (
   <Fragment>
-    <Header />
+    <HeaderChosen />
     <WrappedComponent />
   </Fragment>
 );
