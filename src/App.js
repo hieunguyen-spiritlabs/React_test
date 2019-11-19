@@ -1,11 +1,15 @@
 import React from "react";
-import HeaderHome from "./components/header/HeaderHome.component";
+import {Switch, Route} from 'react-router-dom';
+
+import WithHeader from "./components/header/WithHeader.component";
 import MovieListContainer from "./components/movie-list/MovieList.container";
 
 const App = () => (
   <div>
-    <HeaderHome />
-    <MovieListContainer />
+    <Switch>
+      <Route exact path="/" render={() => WithHeader(MovieListContainer)}/>
+      <Route exact path="/test" component={MovieListContainer}/>
+    </Switch>
   </div>
 );
 
