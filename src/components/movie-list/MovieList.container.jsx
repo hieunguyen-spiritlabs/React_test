@@ -4,6 +4,11 @@ import MovieList from "./MovieList.component";
 import WithSpinner from "../with-spinner/WithSpinner.component";
 
 class MovieListContainer extends React.Component {
+  constructor() {
+    super();
+
+    this.movie = WithSpinner(MovieList)
+  }
   state = {
     movieList: [],
     available: false
@@ -22,7 +27,7 @@ class MovieListContainer extends React.Component {
       });
   }
   render() {
-    return WithSpinner(MovieList)({
+    return this.movie({
       available: this.state.available,
       movieList: this.state.movieList
     });
