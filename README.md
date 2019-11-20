@@ -10,7 +10,7 @@ Không dùng HOC trong hàm render, vì khi re-render, component trả về từ
 ## -------------------------------------------------
 ## Thứ 4, ngày 20/11
 
-# Promise Không chạy async
+### Promise Không chạy async
 const wait = () => {
   let s = 0;
   for (let i = 0; i <1000000000; i++) {
