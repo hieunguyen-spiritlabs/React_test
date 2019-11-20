@@ -48,5 +48,8 @@ Check props HOC, CheckProps(propsToCheck)(WrappedComponent) <br>
 Nếu propsToCheck không tồn tại, render Err, props tồn tại, render WrappedComponent <br>
 ......
 
+### event.stopPropagation
+https://codesandbox.io/s/spring-violet-qmg27 
+
 
 ## -------------------------------------------------
