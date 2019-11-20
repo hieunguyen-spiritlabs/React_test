@@ -49,7 +49,8 @@ Nếu propsToCheck không tồn tại, render Err, props tồn tại, render Wra
 ......
 
 ### event.stopPropagation
-https://codesandbox.io/s/spring-violet-qmg27 
+https://codesandbox.io/s/spring-violet-qmg27 <br>
+Event capture từ window đến target và bubble ngược lại, stopPropagation để ngăn quá trình Capturing -> bubbling
 
 
 ## -------------------------------------------------
