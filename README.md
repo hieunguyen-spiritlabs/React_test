@@ -36,6 +36,7 @@ console.log(a,b);
 https://codesandbox.io/s/funny-bhabha-cdj2h
 Result : PureComp : 50 lần - trung binhf 1.55ms
          Comp :50 lần trung bình 1.43ms
-=> PureComp không ảnh hưởng đến performanc
+=> PureComp không ảnh hưởng đến performance
+Sau 800-1000 lần re-render, render time của cả 2 giảm dần xuống còn 0.28-0.3 ms. tại sao nó làm giảm dần từ 1.5 -> 0.28ms được??? tại giải thuật của Profiler?
 
 ## -------------------------------------------------
