@@ -32,7 +32,10 @@ new Promise((resolve, reject) => {
 }).then (res => b = res);
 console.log(a,b);
 
-# 
-
+### So sánh PureCOmponent và Component khi props thay đổi liên tục
+https://codesandbox.io/s/funny-bhabha-cdj2h
+Result : PureComp : 50 lần - trung binhf 1.55ms
+         Comp :50 lần trung bình 1.43ms
+=> PureComp không ảnh hưởng đến performanc
 
 ## -------------------------------------------------
