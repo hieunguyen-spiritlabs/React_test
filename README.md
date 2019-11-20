@@ -43,4 +43,10 @@ https://twitter.com/dan_abramov/status/759383530120110080/photo/1?ref_src=twsrc%
 Khuyến cáo từ React Team : Use PureCOmponent everywhere will slowdown your app <br>
 PureComponent thực hiện shallow compare, 1 số trường hợp cụ thể cần deep compare thì dùng shouldCOmponentUpdate <br>
 
+### use case of HOC
+Check props HOC, CheckProps(propsToCheck)(WrappedComponent) <br>
+Nếu propsToCheck không tồn tại, render Err, props tồn tại, render WrappedComponent <br>
+......
+
+
 ## -------------------------------------------------
