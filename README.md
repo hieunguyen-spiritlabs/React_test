@@ -67,7 +67,7 @@ redux-store : compose(apply(thunk)) ? compose(apply, thunk) <br>
 DiscoverRecommend : Các propTypes.func dùng default () => {}, còn propTypes.func.isRequired dùng default null? <br>
 Vì sao không được dùng arrow func cho functional component <br>
 
-Best practices trong readme khuyên dùng destructuring
+Best practices trong readme khuyên dùng destructuring, thường component không nhận state từ quá nhiều reducer, sao ko destruct tại arguments
 ```
 const mapStateToProps = (state /*, ownProps*/) => {
   let { App } = state
