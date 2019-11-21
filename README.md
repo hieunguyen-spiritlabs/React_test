@@ -57,3 +57,34 @@ Event capture từ window đến target và bubble ngược lại, stopPropagati
 
 ## -------------------------------------------------
 ## Thứ 5, ngày 2/11
+
+### useState and ocClickOutside
+https://codesandbox.io/s/elastic-mcnulty-5v95u <br>
+
+### singEx
+videoContainer dùng getDerived để gán props vào state thay vì dùng props ? <br>
+redux-store : compose(apply(thunk)) ? compose(apply, thunk) <br>
+DiscoverRecommend : Các propTypes.func dùng default () => {}, còn propTypes.func.isRequired dùng default null? <br>
+Vì sao không được dùng arrow func cho functional component <br>
+
+Best practices trong readme khuyên dùng destructuring
+```
+const mapStateToProps = (state /*, ownProps*/) => {
+  let { App } = state
+
+  return {
+    avatar: App.profile.avatar,
+    firstName: App.profile.firstName,
+    lastName: App.profile.lastName,
+    email: App.profile.email
+  }
+}
+
+const mapStateToProps = ({ App } /*, ownProps*/) => ({
+  avatar: App.profile.avatar,
+  firstName: App.profile.firstName,
+  lastName: App.profile.lastName,
+  email: App.profile.email
+})
+```
+
