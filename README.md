@@ -11,7 +11,7 @@ Không dùng HOC trong hàm render, vì khi re-render, component trả về từ
 ## Thứ 4, ngày 20/11
 
 ### Promise Không chạy async
-`{
+```
 const wait = () => {
   let s = 0;
   for (let i = 0; i <1000000000; i++) {
@@ -32,7 +32,7 @@ new Promise((resolve, reject) => {
   resolve(20)
 }).then (res => b = res);
 console.log(a,b);
-}`
+```
 <br>
 ### So sánh PureCOmponent và Component khi props thay đổi liên tục
 https://codesandbox.io/s/funny-bhabha-cdj2h <br>
