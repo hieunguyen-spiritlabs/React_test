@@ -133,7 +133,7 @@ const content = isDefaultUser ? (
 
 return (
   <Wrapper className={className}>
-    {url ? <NavLink to={url}>{content}</NavLink> : { content }}
+    {url ? <NavLink to={url}>{content}</NavLink> : <>{content}</>}
   </Wrapper>
 )
 ```
