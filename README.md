@@ -89,6 +89,13 @@ const mapStateToProps = ({ App } /*, ownProps*/) => ({
   lastName: App.profile.lastName,
   email: App.profile.email
 })
+
+const mapStateToProps = ({ App: { profile } } /*, ownProps*/) => ({
+  avatar: profile.avatar,
+  firstName: profile.firstName,
+  lastName: profile.lastName,
+  email: profile.email
+})
 ```
 
 ## -------------------------------------------------
