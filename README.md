@@ -11,6 +11,7 @@ Không dùng HOC trong hàm render, vì khi re-render, component trả về từ
 ## Thứ 4, ngày 20/11
 
 ### Promise Không chạy async
+Sau khi chạy code, hàm log(a,b) không thực thi ngay mà chờ 1 lúc (theo em là do chạy wait()) mới log ra pending promise
 ```
 const wait = () => {
   let s = 0;
