@@ -69,7 +69,8 @@ DiscoverRecommend : Các propTypes.func dùng default () => {}, còn propTypes.f
 Vì sao không được dùng arrow func cho functional component <br>
 Discover.js - LivestreamDesc - tại sao dùng dangerouslySetInnerHtml mà không truyền trực tiếp qua children <br>
 
-Best practices trong readme khuyên dùng destructuring, thường component không nhận state từ quá nhiều reducer, sao ko destruct tại arguments
+Best practices trong readme khuyên dùng destructuring, thường component không nhận state từ quá nhiều reducer, sao ko destruct tại arguments <br>
+truyền full state có tốn bộ nhớ không ?
 ```
 const mapStateToProps = (state /*, ownProps*/) => {
   let { App } = state
