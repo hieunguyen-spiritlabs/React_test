@@ -56,7 +56,7 @@ Event capture từ window đến target và bubble ngược lại, stopPropagati
 
 
 ## -------------------------------------------------
-## Thứ 5, ngày 2/11
+## Thứ 5, ngày 21/11
 
 ### useState and ocClickOutside
 https://codesandbox.io/s/elastic-mcnulty-5v95u <br>
@@ -89,3 +89,42 @@ const mapStateToProps = ({ App } /*, ownProps*/) => ({
 })
 ```
 
+## -------------------------------------------------
+## Thứ 6, ngày 22/11
+```
+{url ? (
+  <NavLink to={url}>
+    {isDefaultUser
+      ? <UserName width={width}>{userName}</UserName>
+      :  <Avatar
+          src={avatar || defaultAvatar}
+          alt="Avatar icon"
+          width={width}
+      />
+    }
+  </NavLink>
+) : (
+  isDefaultUser
+    ? <UserName width={width}>{userName}</UserName>
+    : <Avatar
+        src={avatar || defaultAvatar}
+        alt="Avatar icon"
+        width={width}
+    />
+)}
+```
+----
+```
+let { avatar, width, url, className, isDefaultUser, userName } = this.props
+const content = isDefaultUser ? (
+    <UserName width={width}>{userName}</UserName>
+  ) : (
+    <Avatar src={avatar || defaultAvatar} alt="Avatar icon" width={width} />
+  )
+
+return (
+  <Wrapper className={className}>
+    {url ? <NavLink to={url}>{content}</NavLink> : { content }}
+  </Wrapper>
+)
+```
